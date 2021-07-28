@@ -1,0 +1,84 @@
+/* ------------ Utilities -------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.purchase-button{
+    background-color: #E76F51;
+    color: #fff;
+    font-size:16px;
+    font-weight:500;
+    padding:8px 30px;
+    letter-spacing:0.2em;
+    border-radius: 50px;
+    border:none;
+}
+@media only screen and (max-width: 576px){
+    .purchase-button{
+        font-size:12px;
+        padding:8px 20px;
+    }
+}
+/* ------------ Header area -------------------*/
+header{
+    background-color: #264653;
+}
+/* ------------ Navigation area -------------------*/
+nav{
+    background-color: #264653;
+}
+nav .navbar-toggler, ul{
+    margin-left: auto;
+}
+@media only screen and (max-width: 576px){
+    nav ul {
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    nav{
+        background-color: #154051;
+        box-shadow: 10px 10px 20px;
+    }
+    nav ul {
+        text-align: center;
+    }
+}
+/* -------------- Header main Area ---------------*/
+.header-main{
+    padding: 150px 0 100px 0;
+}
+.header-info h1{
+    font-size:48px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+.header-info h5{
+    color: rgb(199, 198, 198);
+}
+.header-info p{
+    text-align: justify;
+}
+.header-img img{
+    width: 480px;
+}
+@media only screen and (max-width: 576px){
+
+    .header-info{
+        padding-bottom: 30px;
+    }
+    .header-info h1{
+        font-size:30px;
+    }
+    .header-img img{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header-info{
+        padding-bottom: 50px;
+    }
+    .header-info h1{
+        font-size:38px;
+    }
+}
