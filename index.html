@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- ------------ Google Font link --------------->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ------------ Font Awesome Cdn link --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -36,7 +38,7 @@
                   </li>
                 </ul>
                     <form action="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">
-                        <button type="submit" class="purchase-button">Search</button>
+                        <button type="submit" class="purchase-button"><i class="fas fa-search"></i> Search</button>
                     </form>
               </div>
             </div>
@@ -49,22 +51,70 @@
                     <h5 class="">Honda: The Power of Dreams</h5>
                     <p class="text-muted mt-4">The 249.5 cc (15.23 cu in) CBR250R was made from 2011 to 2013 for all Honda markets except Japan and Malaysia, where production continued after 2013. Originally intended primarily for the Thai and Indian markets, the 250R was sold worldwide, including in developed countries in Europe</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="purchase-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
+                    <button type="button" class="purchase-button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-biking"></i> Purchase</button>
   
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Payment Information</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Delivary Information</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                            ...
+                              <!-- Delivary Information -->
+                              <form class="row g-3">
+                                <div class="col-md-4">
+                                  <label for="validationDefault01" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationDefault02" class="form-label">Last name</label>
+                                  <input type="text" class="form-control" id="validationDefault02" required>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationDefaultUsername" class="form-label">Honda-CBR Model</label>
+                                  <div class="input-group">
+                                    <select class="form-select form-select-md" aria-label=".form-select-md example" required>
+                                      <option selected disabled value="">Select Your Honda-CBR Model</option>
+                                      <option value="1">Honda-CBR-650R</option>
+                                      <option value="2">Honda-1000RR-R</option>
+                                      <option value="3">Honda-CBR-300R</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <h5>Delivary Address</h5>
+                                <div class="col-md-6">
+                                  <label for="validationDefault03" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationDefault04" class="form-label">Delivary Way</label>
+                                  <select class="form-select" id="validationDefault04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>By Air</option>
+                                    <option>By Ship</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationDefault05" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="validationDefault05" required>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                      Agree to terms and conditions
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button class="btn btn-success rounded-pill" type="submit">Submit form</button>
+                                </div>
+                              </form>
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success rounded-pill">Submit</button>
+                            <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Close <i class="fas fa-times"></i></button>
                             </div>
                         </div>
                         </div>
@@ -75,7 +125,6 @@
                 </div>
             </div>
         </section>
-
     </header>
   
     

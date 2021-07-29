@@ -29,6 +29,9 @@ nav{
 nav .navbar-toggler, ul{
     margin-left: auto;
 }
+.fa-search, .fa-biking{
+    border-right: 1px solid white;
+}
 @media only screen and (max-width: 576px){
     nav ul {
         text-align: center;
