@@ -85,6 +85,9 @@ header h1{
     h1{
         font-size:38px;
     }
+    .header-img{
+        text-align: center;
+    }
 }
 
 /* ------------------------ Featured Area -----------------*/
