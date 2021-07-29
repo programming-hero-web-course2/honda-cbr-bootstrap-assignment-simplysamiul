@@ -21,6 +21,7 @@ body{
 /* ------------ Header area -------------------*/
 header{
     background-color: #264653;
+    margin-bottom: 50px;
 }
 /* ------------ Navigation area -------------------*/
 nav{
@@ -51,9 +52,9 @@ nav .navbar-toggler, ul{
 .header-main{
     padding: 150px 0 100px 0;
 }
-.header-info h1{
+header h1{
     font-size:48px;
-    font-weight: 600;
+    font-weight: bold;
     text-transform:uppercase;
 }
 .header-info h5{
@@ -70,7 +71,7 @@ nav .navbar-toggler, ul{
     .header-info{
         padding-bottom: 30px;
     }
-    .header-info h1{
+    header h1{
         font-size:30px;
     }
     .header-img img{
@@ -81,7 +82,91 @@ nav .navbar-toggler, ul{
     .header-info{
         padding-bottom: 50px;
     }
-    .header-info h1{
+    h1{
         font-size:38px;
     }
+}
+
+/* ------------------------ Featured Area -----------------*/
+.featured-area{
+    margin-bottom: 100px;
+}
+h1{
+    text-transform:capitalize;
+    font-weight: bold;
+}
+.section-title{
+    margin-bottom: 50px;
+}
+.bike-img{
+    text-align: center;
+    margin-left: 25px;
+}
+.bike-img img{
+    width: 90%;
+    filter: grayscale(100%);
+    transition:0.5s ease-in-out;
+}
+.bike-img img:hover{
+    filter: grayscale(0%);   
+}
+@media only screen and (max-width: 576px){
+    h1{
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .bike-img{
+        margin-left:0;
+        margin-bottom: 50px;
+    }   
+}
+
+/* ------------------ Latest News Area -------------------*/
+#news{
+    margin-bottom: 80px;
+}
+.card-info h3{
+    font-size:22px;
+}
+.more-info-button{
+    background-color: transparent;
+    color: #E76F51;
+    font-size:16px;
+    font-weight:500;
+    padding:8px 30px;
+    border-radius: 50px;
+    border: 1px solid #E76F51;
+    transition:0.5s ease-in-out;
+}
+.fa-book-reader{
+    border-right: 1px solid #E76F51;
+    padding-right: 5px;
+}
+.more-info-button:hover{
+    background-color: #E76F51;
+    color: #ffff;
+}
+
+/* -------------------- Clients Comment Area -----------------*/
+.clients-comment{
+    margin-bottom: 100px;
+}
+.comment-area-title{
+    margin-bottom: 50px;
+}
+.comment-area-title h1{
+    font-weight: bold;
+}
+.fa-star, .fa-star-half-alt{
+    color: #E76F51;
+}
+.client-review h6{
+    color: #23A6F0;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.client-profession{
+    color: #252B42;
+    font-weight: bold;
 }
