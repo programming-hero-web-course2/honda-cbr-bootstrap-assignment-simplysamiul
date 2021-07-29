@@ -170,3 +170,18 @@ h1{
     color: #252B42;
     font-weight: bold;
 }
+/* -------------------- Question Area -----------------*/
+.auestion-area{
+    margin-bottom: 100px;
+}
+.accordion-apace{
+    margin-bottom: 25px;
+}
+.accordion-img{
+    width: 80%;
+}
+@media only screen and (max-width: 768px){
+    .section-img{
+        margin-bottom: 30px;
+    }
+}
