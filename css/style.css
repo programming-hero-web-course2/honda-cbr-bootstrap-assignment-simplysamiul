@@ -75,7 +75,7 @@ header h1{
         font-size:30px;
     }
     .header-img img{
-        width: 300px;
+        width: 320px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -174,7 +174,7 @@ h1{
     font-weight: bold;
 }
 /* -------------------- Question Area -----------------*/
-.auestion-area{
+.question-area{
     margin-bottom: 100px;
 }
 .accordion-apace{
@@ -186,5 +186,79 @@ h1{
 @media only screen and (max-width: 768px){
     .section-img{
         margin-bottom: 30px;
+    }
+}
+
+/* -------------------- riding Equpment Area -----------------*/
+.equpment-area{
+    margin-bottom: 100px;
+}
+.per-equpment{
+    border-bottom: 1px solid grey;
+}
+.equpment-img{
+    width:200px;
+    border-right: 1px solid gray;
+}
+.equpment-img img{
+    width:75%;
+}
+.equpment-info h2{
+    font-size: 20px;
+}
+.equpment-info h3{
+    font-size:18px;
+    color: #f44336;
+}
+/* ------------------ Message Area ------------------*/
+.message-area{
+    margin-bottom: 100px;
+    background-image: linear-gradient(360deg,#e46158b5,#252b42c6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.message-button-area{
+    text-align: center;
+}
+.message-button{
+    background-color: #252B42;
+    color: #fff;
+    font-size:16px;
+    font-weight:500;
+    padding:8px 30px;
+    letter-spacing:0.2em;
+    border-radius: 50px;
+    border:none;
+    margin-top:20px;
+}
+/* ------------------ Footer Area ------------------*/
+footer{
+    background-color: #252B42;
+    text-align: center;
+    padding-top: 20px;
+}
+footer h2{
+    color: grey;
+    text-transform: uppercase;
+    font-size:25px;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+marquee{
+    color:rgb(244, 242, 242);
+    letter-spacing:0.3em;
+    border-top: 2px solid lightgrey;
+    padding: 5px 0;
+}
+@media only screen and (max-width: 768px){
+    .footer-img img{
+        width:150px;
+        height:150px;
+    }
+    footer h2{
+        font-size:20px;
     }
 }
